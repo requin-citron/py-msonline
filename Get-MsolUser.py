@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from azure.identity import InteractiveBrowserCredential, DefaultAzureCredential
 import xml.etree.ElementTree as ET
 import requests
