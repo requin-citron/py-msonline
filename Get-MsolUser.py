@@ -45,11 +45,9 @@ for user in root.findall(".//c:User",namespaces):
         if el.text is None:
             tmp_lst = list()
             for subel in el:
-                print(name(subel), subel.text)
                 tmp_lst.append({name(subel):subel.text})
             user_dict[name(el)] = tmp_lst
         else:
-            print(name(el), el.text)
             user_dict[name(el)] = el.text
     out.append(user_dict)
 
